@@ -1,4 +1,4 @@
-# API Test: Verify Status and response time of All Posts
+# API Test: Verify Status and response time of All objects
 
 ## Request
 
