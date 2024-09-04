@@ -1,9 +1,8 @@
-# API Test: Verify Status and response time of All objects
+# API Test: Verify partially update after PATCH method
 
 ## Request
 
-URL: {{baseURI}}/{{objectParameter}}
-
+URL: {{baseURI}}/{{objectParameter}}/{{objectID}}
 Method: GET
 
 ## Authorization
@@ -17,6 +16,7 @@ Type: Inherit from parent
 |---------------|-------------------------------------|
 |baseUrl	      |https://api.restful-api.dev          |
 |objectParameter|objects                              |
+|objectID       |ff80818191a25dfc0191a39dbe580307     |
 
 ## Body
 
@@ -24,19 +24,9 @@ Empty: This GET request does not require a request body.
 
 
 ## Tests
-### // Verify status code is 200
+### // Verify object partallz update
 
-`pm.test("Status code is 200", function () {`
-
- `   pm.response.to.have.status(200);`
-
+`pm.test("Name is Apple MacBook Pro 16 (Updated Bobana", function () {`
+ `   var jsonData = pm.response.json();`
+  `  pm.expect(jsonData.name).to.eql("Apple MacBook Pro 16 (Updated Bobana)");`
 `});`
-
-### // Verify response time is less than 1000ms
-
-`pm.test("Verify response time is less than 1000ms", function () {`
-
-`    pm.expect(pm.response.responseTime).to.be.below(1000);`
-
-`});`
-
