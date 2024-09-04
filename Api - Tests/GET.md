@@ -26,16 +26,16 @@ Empty: This GET request does not require a request body.
 ## Tests
 ### // Verify status code is 200
 
-pm.test("Status code is 200", function () {
+`pm.test("Status code is 200", function () {`
 
-    pm.response.to.have.status(200);
+ `   pm.response.to.have.status(200);`
 
-});
+`});`
 
 ### // Verify response time is less than 1000ms
 
-pm.test("Verify response time is less than 1000ms", function () {
+`pm.test("Verify response time is less than 1000ms", function () {`
 
-    pm.expect(pm.response.responseTime).to.be.below(1000);
+`    pm.expect(pm.response.responseTime).to.be.below(1000);`
 
-});
+`});`
