@@ -4,7 +4,7 @@
 
 URL: {{baseURI}}/{{objectParameter}}/{{objectID}}
 
-Method: PATCH
+Method: PUT
 
 ## Authorization
 
@@ -22,8 +22,22 @@ Type: Inherit from parent
 ## Body
 
 {
-
-   "name": "Apple MacBook Pro 16 (Updated Bobana)"
+ 
+   "name": "Apple MacBook Pro 16",
+   
+   "data": {
+   
+      "year": 2024,
+      
+      "price": 3000,
+      
+      "CPU model": "Intel Core i9",
+      
+      "Hard disk size": "1 TB",
+      
+      "color": "silver"
+   
+   }
 
 }
 
