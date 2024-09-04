@@ -35,11 +35,11 @@ Empty: This DELETE request does not require a request body.
 
 ### // Verify object with ID has been deleted
 
-```pm.test("Object with id has been deleted", function () {
+`pm.test("Object with id has been deleted", function () {`
 
-    var jsonData = pm.response.json();
+ `   var jsonData = pm.response.json();`
 
-    pm.expect(jsonData.message).to.contains("Object with id");
+  `  pm.expect(jsonData.message).to.contains("Object with id");`
 
-});```
+`});`
 
