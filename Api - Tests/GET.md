@@ -18,7 +18,7 @@ Type: Inherit from parent
 |baseUrl	      |https://api.restful-api.dev          |
 |objectParameter|objects                              |
 
-##Body
+## Body
 
 Empty: This GET request does not require a request body.
 
