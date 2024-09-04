@@ -1,4 +1,4 @@
-# API Test: Verify Status after patch method
+# API Test: Verify Status 200 after post method
 
 ## Request
 
