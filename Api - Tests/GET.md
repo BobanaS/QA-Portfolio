@@ -3,6 +3,7 @@
 ## Request
 
 URL: {{baseURI}}/{{objectParameter}}
+
 Method: GET
 
 ## Authorization
