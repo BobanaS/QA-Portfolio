@@ -27,19 +27,19 @@ Empty: This DELETE request does not require a request body.
 ## Tests
 ### // Verify status code is 200
 
-`pm.test("Status code is 200", function () {
+```pm.test("Status code is 200", function () {
 
     pm.response.to.have.status(200);
 
-});`
+});```
 
 ### // Verify object with ID has been deleted
 
-pm.test("Object with id has been deleted", function () {
+```pm.test("Object with id has been deleted", function () {
 
     var jsonData = pm.response.json();
 
     pm.expect(jsonData.message).to.contains("Object with id");
 
-});
+});```
 
