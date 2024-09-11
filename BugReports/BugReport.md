@@ -1,3 +1,4 @@
-In this folder is Bug report list.pdf with some bugs from https://orderific.com/qrcode-bug.
+*** In this folder, you will find the Bug Report List.pdf containing some bugs identified on https://orderific.com/qrcode-bug.
 
-This was task for part of our selection process.
+
+This task was part of the selection process.
